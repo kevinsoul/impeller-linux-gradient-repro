@@ -19,8 +19,10 @@ Material for **[flutter/flutter#194433](https://github.com/flutter/flutter/issue
 | `repro/` | Standalone Flutter app with 5 scenarios; repaints every frame from a `Ticker`, so **no mouse input is required** |
 | `logs/` | Per-frame `FrameTiming` logs — see `logs/README.md` |
 | `timelines/` | VM Service timeline dumps (B/E events paired on the raster/UI threads); `.json.gz` are gzipped |
-| `scripts/` | Capture + analysis tooling used for the measurements |
+| `scripts/` | Capture + analysis tooling used for the measurements (`scripts/vm_capture/` is a runnable Dart package) |
 | `patches/` | Temporary instrumentation applied to the *reporting app* (frame-timing logger, auto entry into its simulated-data mode, feature bisection flags) |
+| `docs/HANDOFF.md` | **Hand-over notes (Chinese): engine build steps, local-engine flags, source-entry grep recipes, hypotheses, acceptance criteria for a fix** |
+| `docs/issue-updates.md` | The three comments posted to the upstream issue |
 
 ## Running the reproducer
 
@@ -42,7 +44,8 @@ For timeline capture, run a single scenario longer:
 ```bash
 REPRO_ONLY=grad_aurora_like REPRO_SECONDS=45 flutter run -d linux --enable-impeller
 # then grab a timeline over the VM Service:
-dart run scripts/capture.dart "ws://127.0.0.1:<port>/<token>/ws" 12 timeline.json
+cd scripts/vm_capture && dart pub get
+dart run bin/capture.dart "ws://127.0.0.1:<port>/<token>/ws" 12 timeline.json
 ```
 
 Scenarios: `grad_solid_full` (control), `grad_linear_full`, `grad_linear_panels`
@@ -90,3 +93,14 @@ The reporting app was measured with a temporary flag that enters its built-in si
 that disables individual decorations. Numbers are quoted in the issue comment; the logs are
 `logs/app_autosim_*.log` (baseline) and `logs/bisect_imp_*.log` (bisection variants), summarised by
 `scripts/bisect_report.py` and `scripts/app_compare.py`.
+
+## Hand-over notes
+
+Everything needed to continue this work — engine build steps (engine sources now live inside the
+`flutter/flutter` monorepo), the `--local-engine*` flags verified for Flutter 3.47.7, source-navigation
+grep recipes for `impeller`, the remaining hypotheses and the acceptance criteria for a fix — is recorded in
+[`docs/HANDOFF.md`](docs/HANDOFF.md) (Chinese). The three comments posted upstream are in
+[`docs/issue-updates.md`](docs/issue-updates.md).
+
+Upstream questions still open (see the third comment): whether one render pass per blended draw is expected
+in the GL backend, whether batching is planned, and whether a pass-reducing PR would be welcome.

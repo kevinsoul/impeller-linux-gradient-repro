@@ -1,0 +1,10 @@
+name: vm_capture
+description: 从 VM Service 抓取 timeline 用于 Impeller 卡顿取证
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  vm_service: ^15.0.0
