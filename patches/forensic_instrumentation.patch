@@ -1,0 +1,205 @@
+diff --git a/lib/display_choice.dart b/lib/display_choice.dart
+index 9af9e77..cae8221 100644
+--- a/lib/display_choice.dart
++++ b/lib/display_choice.dart
+@@ -2,6 +2,7 @@ import 'dart:math';
+ 
+ import 'package:flutter/material.dart';
+ import 'package:pressure/core/array_mask.dart';
++import 'package:pressure/core/bisect_flags.dart';
+ import 'package:pressure/core/models/localizations.dart';
+ import 'package:pressure/core/services/ui_data_layer.dart';
+ import 'package:pressure/ui/theme/app_colors.dart';
+@@ -993,6 +994,11 @@ class DataTablePainter extends CustomPainter {
+       textStyle = _normalStyle;
+     }
+ 
++    // 【临时取证】no_text：跳过表格数值文本绘制
++    if (BisectFlags.noText) {
++      return;
++    }
++
+     final textPainter = _getTextPainter(text, textStyle);
+     final textOffset = Offset(
+       x + (width - textPainter.width) / 2,
+diff --git a/lib/main.dart b/lib/main.dart
+index 0c59ffa..21ad04d 100644
+--- a/lib/main.dart
++++ b/lib/main.dart
+@@ -1,5 +1,6 @@
+ import 'dart:async';
+ import 'dart:convert';
++import 'dart:io';
+ import 'dart:typed_data';
+ import 'dart:ui' as ui;
+ import 'package:flutter/material.dart';
+@@ -10,6 +11,7 @@ import 'package:file_picker/file_picker.dart';
+ import 'package:package_info_plus/package_info_plus.dart';
+ import 'package:pressure/cell_history_manager.dart';
+ import 'package:pressure/core/array_mask.dart';
++import 'package:pressure/core/bisect_flags.dart';
+ import 'package:pressure/core/providers.dart';
+ import 'package:pressure/core/settings.dart';
+ import 'package:pressure/debug_log.dart';
+@@ -61,6 +63,16 @@ void main() async {
+ 
+   WidgetsFlutterBinding.ensureInitialized();
+ 
++  // [临时取证埋点] PRESSURE_FRAME_TIMINGS 存在时逐帧输出 build/raster 耗时，
++  // 用于 Impeller 卡顿根因定位（取证完成后删除，勿提交）
++  if (Platform.environment.containsKey('PRESSURE_FRAME_TIMINGS')) {
++    SchedulerBinding.instance.addTimingsCallback((timings) {
++      for (final t in timings) {
++        print('[FrameTiming] $t');
++      }
++    });
++  }
++
+   await windowManager.ensureInitialized();
+ 
+   // UI 偏好：先加载 SharedPreferences，供启动窗口底色与 Settings 单源使用
+@@ -261,6 +273,30 @@ class _HomePageState extends State<HomePage>
+         first.col,
+       );
+     });
++
++    // [临时取证埋点] PRESSURE_AUTOSIM=<fps>：自动进入「模拟数据 + 采集」，
++    // 使真实界面的逐帧光栅开销可在无人工 hover 的情况下测量。
++    // PRESSURE_AUTOSIM_SECONDS=<秒>：采集若干秒后自动退出（便于批量对照）。
++    // 取证完成后删除，勿提交。
++    final autoSimFps = Platform.environment['PRESSURE_AUTOSIM'];
++    if (autoSimFps != null) {
++      final fps = double.tryParse(autoSimFps) ?? 60.0;
++      _deviceService.serialTask.setDebugMode(true);
++      _isDebug = true;
++      _deviceService.serialTask.setSimulateConfig(fps: fps);
++      SchedulerBinding.instance.addPostFrameCallback((_) async {
++        await _openPort();
++        await _startCollection();
++        stdout.writeln('[AUTOSIM] collecting fps=${fps.toStringAsFixed(1)}');
++        final secs =
++            int.tryParse(Platform.environment['PRESSURE_AUTOSIM_SECONDS'] ?? '') ?? 0;
++        if (secs > 0) {
++          await Future<void>.delayed(Duration(seconds: secs));
++          stdout.writeln('[AUTOSIM] done');
++          exit(0);
++        }
++      });
++    }
+   }
+ 
+   Future<void> _initVersion() async {
+@@ -1182,7 +1218,8 @@ class _HomePageState extends State<HomePage>
+                                 if (_showPlayback && _currentTabIndex == 1)
+                                   _buildPlaybackPage()
+                                 else if (_showTemperatureStats &&
+-                                    _currentTabIndex == 0)
++                                    _currentTabIndex == 0 &&
++                                    !BisectFlags.noChart)
+                                   InlineHistoryChart(
+                                     statsStream:
+                                         _historyManager.getFrameStatsStream(),
+diff --git a/lib/ui/components/aurora_background.dart b/lib/ui/components/aurora_background.dart
+index d88de6e..f137d07 100644
+--- a/lib/ui/components/aurora_background.dart
++++ b/lib/ui/components/aurora_background.dart
+@@ -1,5 +1,6 @@
+ import 'package:flutter/material.dart';
+ 
++import 'package:pressure/core/bisect_flags.dart';
+ import 'package:pressure/ui/theme/app_colors.dart';
+ import 'package:pressure/ui/theme/app_theme.dart';
+ 
+@@ -23,6 +24,13 @@ class AuroraBackground extends StatelessWidget {
+ 
+   @override
+   Widget build(BuildContext context) {
++    // 【临时取证】no_aurora：去掉极光绘制（7 径向渐变 + wash + 网格）
++    if (BisectFlags.noAurora) {
++      return ColoredBox(
++        color: isDark ? const Color(0xFF1E1E40) : const Color(0xFFEFF0FA),
++        child: child,
++      );
++    }
+     return ColoredBox(
+       color: isDark ? const Color(0xFF1E1E40) : const Color(0xFFEFF0FA),
+       child: Stack(
+diff --git a/lib/ui/components/glass_surface.dart b/lib/ui/components/glass_surface.dart
+index 0dc3ec6..ea67630 100644
+--- a/lib/ui/components/glass_surface.dart
++++ b/lib/ui/components/glass_surface.dart
+@@ -2,6 +2,7 @@ import 'dart:ui' show ImageFilter;
+ 
+ import 'package:flutter/material.dart';
+ 
++import 'package:pressure/core/bisect_flags.dart';
+ import 'package:pressure/ui/theme/app_colors.dart';
+ import 'package:pressure/ui/theme/glass.dart';
+ 
+@@ -130,6 +131,10 @@ class GlassSurface extends StatelessWidget {
+ 
+   @override
+   Widget build(BuildContext context) {
++    // 【临时取证】no_glass：去掉渐变/描边/高光/阴影/裁剪，仅保留布局
++    if (BisectFlags.noGlass) {
++      return Container(margin: margin, padding: padding, child: child);
++    }
+     final tokens = GlassTokens(isDark);
+     final radius = BorderRadius.circular(borderRadius);
+     final fill = solid
+@@ -139,11 +144,14 @@ class GlassSurface extends StatelessWidget {
+     final content = Container(
+       padding: padding,
+       decoration: BoxDecoration(
+-        gradient: LinearGradient(
+-          begin: Alignment.topLeft,
+-          end: Alignment.bottomRight,
+-          colors: fill,
+-        ),
++        gradient: BisectFlags.noGradient
++            ? null
++            : LinearGradient(
++                begin: Alignment.topLeft,
++                end: Alignment.bottomRight,
++                colors: fill,
++              ),
++        color: BisectFlags.noGradient ? fill.first : null,
+         borderRadius: radius,
+         border: border ??
+             Border.all(
+@@ -155,7 +163,7 @@ class GlassSurface extends StatelessWidget {
+     );
+ 
+     // 内容密集表面默认不叠高光，避免白色高光压住文字导致发虚
+-    Widget stacked = (highlight && !solid)
++    Widget stacked = (highlight && !solid && !BisectFlags.noHighlight)
+         ? GlassHighlight(
+             isDark: isDark,
+             borderRadius: borderRadius,
+@@ -163,7 +171,7 @@ class GlassSurface extends StatelessWidget {
+           )
+         : content;
+ 
+-    if (blur) {
++    if (blur && !BisectFlags.noBlur) {
+       stacked = BackdropFilter(
+         filter: ImageFilter.blur(
+           sigmaX: tokens.blurSigma,
+@@ -178,12 +186,14 @@ class GlassSurface extends StatelessWidget {
+       decoration: BoxDecoration(
+         borderRadius: radius,
+         boxShadow: [
+-          if (glowColor != null)
++          if (!BisectFlags.noShadow && glowColor != null)
+             GlassTokens.glow(glowColor!, opacity: glowOpacity),
+-          if (shadow) ...tokens.shadows(),
++          if (!BisectFlags.noShadow && shadow) ...tokens.shadows(),
+         ],
+       ),
+-      child: ClipRRect(borderRadius: radius, child: stacked),
++      child: BisectFlags.noClip
++          ? stacked
++          : ClipRRect(borderRadius: radius, child: stacked),
+     );
+   }
+ }

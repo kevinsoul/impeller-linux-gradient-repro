@@ -1,0 +1,292 @@
+Script started on 2026-10-15 16:26:22+08:00 [COMMAND="flutter run -d linux --enable-impeller" <not executed on terminal>]
+Resolving dependencies...
+Downloading packages...
+  [1m_fe_analyzer_shared[0m 91.0.0 [36m(109.0.0 available)[39m
+  [1manalyzer[0m 8.4.1 [36m(14.5.0 available)[39m
+  [1masync[0m 2.13.0 [36m(2.13.1 available)[39m
+  [1mclock[0m 1.1.2 [36m(1.1.3 available)[39m
+  [1mcoverage[0m 1.15.1 [36m(1.16.0 available)[39m
+  [1mcross_file[0m 0.3.5+1 [36m(0.4.0 available)[39m
+  [1mffi[0m 2.1.4 [36m(2.2.0 available)[39m
+  [1mfile_picker[0m 8.3.7 [36m(13.1.0 available)[39m
+  [1mflutter_libserialport[0m 0.3.0 [36m(0.6.0 available)[39m
+  [1mflutter_lints[0m 5.0.0 [36m(6.0.0 available)[39m
+  [1mflutter_plugin_android_lifecycle[0m 2.0.33 [36m(2.0.35 available)[39m
+  [1mflutter_riverpod[0m 3.3.2 [36m(3.4.3 available)[39m
+  [1mfrontend_server_client[0m 4.0.0 [36m(4.1.0 available)[39m
+  [1mintl[0m 0.20.2 [36m(0.20.3 available)[39m
+  [1mjson_annotation[0m 4.11.0 [36m(4.12.0 available)[39m
+  [1mlints[0m 5.1.1 [36m(6.1.0 available)[39m
+  [1mmaterial_color_utilities[0m 0.13.0 [36m(0.13.1 available)[39m
+  [1mpackage_config[0m 2.2.0 [36m(3.0.0 available)[39m
+  [1mpackage_info_plus[0m 8.3.1 [36m(10.2.2 available)[39m
+  [1mpackage_info_plus_platform_interface[0m 3.2.1 [36m(4.1.0 available)[39m
+  [1mplatform[0m 3.1.6 [36m(3.2.0 available)[39m
+  [1mriverpod[0m 3.3.2 [36m(3.4.3 available)[39m
+  [1mscreen_retriever[0m 0.2.0 [36m(0.3.0 available)[39m
+  [1mscreen_retriever_linux[0m 0.2.0 [36m(0.2.2 available)[39m
+  [1mscreen_retriever_macos[0m 0.2.0 [36m(0.2.2 available)[39m
+  [1mscreen_retriever_platform_interface[0m 0.2.0 [36m(0.2.2 available)[39m
+  [1mscreen_retriever_windows[0m 0.2.0 [36m(0.2.2 available)[39m
+  [1mshared_preferences[0m 2.5.5 [36m(2.5.6 available)[39m
+  [1mshared_preferences_android[0m 2.4.23 [36m(2.4.28 available)[39m
+  [1msource_span[0m 1.10.1 [36m(1.10.2 available)[39m
+  [1mstack_trace[0m 1.12.1 [36m(1.12.2 available)[39m
+  [1mtest[0m 1.31.1 [36m(1.33.0 available)[39m
+  [1mtest_api[0m 0.7.12 [36m(0.7.15 available)[39m
+  [1mtest_core[0m 0.6.18 [36m(0.6.21 available)[39m
+  [1mvm_service[0m 15.0.2 [36m(15.3.0 available)[39m
+  [1mwin32[0m 5.15.0 [36m(6.4.0 available)[39m
+  [1mwindow_manager[0m 0.4.3 [36m(0.5.2 available)[39m
+Got dependencies!
+37 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Launching lib/main.dart on Linux in debug mode...
+Building Linux application...                                          ⣷⣯⣽⣻⣟⡿⢿⣻⣟⣯⣽⣾⣷⣯⣽⣻⣟⡿⢿⣻⣟⣯⣽⣾⣷⣯⣽⣻⣟⡿⢿⣻⣟⣯⣽⣾⣷⣯⣽⣻⣟⡿⢿⣻⣟⣯⣽⣾⣷⣯⣽⣻⣟⡿⢿⣻⣟⣯⣽⣾⣷⣯⣽⣻⣟⡿⢿⣻⣟⣯⣽⣾⣷⣯⣽⣻⣟⡿⢿⣻⣟⣯⣽⣾⣷⣯⣽ 
+[32m[1m[32m✓[39m[32m[22m Built build/linux/x64/debug/bundle/pressure[39m
+[IMPORTANT:flutter/shell/platform/embedder/embedder_surface_gl_impeller.cc(126)] Using the Impeller rendering backend (OpenGLESSDF).
+Gdk-Message: 16:26:34.770: Unable to load  from the cursor theme
+Syncing files to device Linux...                                       ⣷⣯⣽    248ms
+
+Flutter run key commands.
+[1mr[22m Hot reload. 🔥🔥🔥
+[1mR[22m Hot restart.
+[1mh[22m List all available interactive commands.
+[1md[22m Detach (terminate "flutter run" but leave application running).
+[1mc[22m Clear the screen
+[1mq[22m Quit (terminate the application on the device).
+
+A Dart VM Service on Linux is available at: http://127.0.0.1:45759/rUiVyUFvDqA=/
+The Flutter DevTools debugger and profiler on Linux is available at: http://127.0.0.1:45759/rUiVyUFvDqA=/devtools/?uri=ws://127.0.0.1:45759/rUiVyUFvDqA=/ws
+
+[AUTOSIM] collecting fps=60.0
+[FrameTiming] FrameTiming(buildDuration: 0.005ms, rasterDuration: 144.355ms, vsyncOverhead: 0.0ms, totalSpan: 144.456ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 2)
+
+** (com.example.pressure:970023): WARNING **: 16:26:59.800: Timed out waiting for OpenGL frame of size 2560x1440 (have 1280x720)
+
+** (com.example.pressure:970023): WARNING **: 16:27:00.034: Timed out waiting for OpenGL frame of size 2560x1440 (have 1280x720)
+[FrameTiming] FrameTiming(buildDuration: 232.816ms, rasterDuration: 290.683ms, vsyncOverhead: 126.608ms, totalSpan: 650.205ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 3)
+[FrameTiming] FrameTiming(buildDuration: 67.729ms, rasterDuration: 115.98ms, vsyncOverhead: 1.5250000000000001ms, totalSpan: 366.285ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 4)
+[FrameTiming] FrameTiming(buildDuration: 35.549ms, rasterDuration: 73.727ms, vsyncOverhead: 157.57ms, totalSpan: 266.909ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 10)
+[FrameTiming] FrameTiming(buildDuration: 8.252ms, rasterDuration: 15.107000000000001ms, vsyncOverhead: 1.385ms, totalSpan: 65.449ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 11)
+[FrameTiming] FrameTiming(buildDuration: 42.766ms, rasterDuration: 13.962ms, vsyncOverhead: 16.469ms, totalSpan: 73.278ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 12)
+[FrameTiming] FrameTiming(buildDuration: 30.331ms, rasterDuration: 9.08ms, vsyncOverhead: 79.996ms, totalSpan: 119.498ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 13)
+[FrameTiming] FrameTiming(buildDuration: 27.129ms, rasterDuration: 12.723ms, vsyncOverhead: 2.049ms, totalSpan: 41.986000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 14)
+[FrameTiming] FrameTiming(buildDuration: 8.998ms, rasterDuration: 9.354000000000001ms, vsyncOverhead: 31.593ms, totalSpan: 50.016ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 15)
+[FrameTiming] FrameTiming(buildDuration: 47.749ms, rasterDuration: 12.018ms, vsyncOverhead: 60.907000000000004ms, totalSpan: 120.742ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 16)
+[FrameTiming] FrameTiming(buildDuration: 39.411ms, rasterDuration: 11.494ms, vsyncOverhead: 5.48ms, totalSpan: 56.469ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 17)
+[FrameTiming] FrameTiming(buildDuration: 35.102000000000004ms, rasterDuration: 10.934000000000001ms, vsyncOverhead: 27.310000000000002ms, totalSpan: 73.533ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 18)
+[FrameTiming] FrameTiming(buildDuration: 16.429000000000002ms, rasterDuration: 13.592ms, vsyncOverhead: 30.843ms, totalSpan: 60.942ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 19)
+[FrameTiming] FrameTiming(buildDuration: 37.383ms, rasterDuration: 11.344ms, vsyncOverhead: 51.395ms, totalSpan: 100.20700000000001ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 20)
+[FrameTiming] FrameTiming(buildDuration: 34.495ms, rasterDuration: 13.755ms, vsyncOverhead: 1.643ms, totalSpan: 49.994ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 21)
+[FrameTiming] FrameTiming(buildDuration: 8.647ms, rasterDuration: 10.874ms, vsyncOverhead: 27.843ms, totalSpan: 47.455ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 22)
+[FrameTiming] FrameTiming(buildDuration: 40.566ms, rasterDuration: 15.132ms, vsyncOverhead: 1.5290000000000001ms, totalSpan: 57.323ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 23)
+[FrameTiming] FrameTiming(buildDuration: 46.243ms, rasterDuration: 15.331ms, vsyncOverhead: 11.325000000000001ms, totalSpan: 73.028ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 24)
+[FrameTiming] FrameTiming(buildDuration: 31.983ms, rasterDuration: 14.308ms, vsyncOverhead: 16.541ms, totalSpan: 62.917ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 25)
+[FrameTiming] FrameTiming(buildDuration: 7.803ms, rasterDuration: 10.552ms, vsyncOverhead: 37.628ms, totalSpan: 56.093ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 26)
+[FrameTiming] FrameTiming(buildDuration: 38.642ms, rasterDuration: 14.766ms, vsyncOverhead: 60.855000000000004ms, totalSpan: 114.354ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 27)
+[FrameTiming] FrameTiming(buildDuration: 29.413ms, rasterDuration: 14.235ms, vsyncOverhead: 28.787ms, totalSpan: 72.517ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 28)
+[FrameTiming] FrameTiming(buildDuration: 6.739ms, rasterDuration: 13.264000000000001ms, vsyncOverhead: 1.741ms, totalSpan: 21.825ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 29)
+[FrameTiming] FrameTiming(buildDuration: 27.622ms, rasterDuration: 12.644ms, vsyncOverhead: 3.154ms, totalSpan: 43.499ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 30)
+[FrameTiming] FrameTiming(buildDuration: 15.816ms, rasterDuration: 12.912ms, vsyncOverhead: 7.731ms, totalSpan: 36.546ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 31)
+[FrameTiming] FrameTiming(buildDuration: 44.286ms, rasterDuration: 10.955ms, vsyncOverhead: 2.202ms, totalSpan: 57.54ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 32)
+[FrameTiming] FrameTiming(buildDuration: 7.377ms, rasterDuration: 9.967ms, vsyncOverhead: 6.158ms, totalSpan: 23.606ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 33)
+[FrameTiming] FrameTiming(buildDuration: 50.321ms, rasterDuration: 10.215ms, vsyncOverhead: 50.761ms, totalSpan: 111.379ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 34)
+[FrameTiming] FrameTiming(buildDuration: 30.68ms, rasterDuration: 14.327ms, vsyncOverhead: 14.541ms, totalSpan: 59.639ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 35)
+[FrameTiming] FrameTiming(buildDuration: 29.135ms, rasterDuration: 13.295ms, vsyncOverhead: 30.401ms, totalSpan: 72.915ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 36)
+[FrameTiming] FrameTiming(buildDuration: 6.432ms, rasterDuration: 10.957ms, vsyncOverhead: 28.67ms, totalSpan: 46.197ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 37)
+[FrameTiming] FrameTiming(buildDuration: 41.625ms, rasterDuration: 11.404ms, vsyncOverhead: 2.113ms, totalSpan: 55.227000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 38)
+[FrameTiming] FrameTiming(buildDuration: 34.665ms, rasterDuration: 12.604000000000001ms, vsyncOverhead: 1.219ms, totalSpan: 48.614000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 39)
+[FrameTiming] FrameTiming(buildDuration: 28.514ms, rasterDuration: 10.393ms, vsyncOverhead: 77.231ms, totalSpan: 116.23ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 40)
+[FrameTiming] FrameTiming(buildDuration: 5.252ms, rasterDuration: 13.184000000000001ms, vsyncOverhead: 12.624ms, totalSpan: 31.137ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 41)
+[FrameTiming] FrameTiming(buildDuration: 56.965ms, rasterDuration: 11.649000000000001ms, vsyncOverhead: 4.17ms, totalSpan: 72.895ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 42)
+[FrameTiming] FrameTiming(buildDuration: 5.655ms, rasterDuration: 8.573ms, vsyncOverhead: 3.2600000000000002ms, totalSpan: 17.589ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 43)
+[FrameTiming] FrameTiming(buildDuration: 32.821ms, rasterDuration: 9.934000000000001ms, vsyncOverhead: 52.789ms, totalSpan: 95.649ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 44)
+[FrameTiming] FrameTiming(buildDuration: 42.166000000000004ms, rasterDuration: 15.085ms, vsyncOverhead: 2.931ms, totalSpan: 60.263ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 45)
+[FrameTiming] FrameTiming(buildDuration: 38.202ms, rasterDuration: 11.552ms, vsyncOverhead: 9.899000000000001ms, totalSpan: 59.738ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 46)
+[FrameTiming] FrameTiming(buildDuration: 45.284ms, rasterDuration: 12.175ms, vsyncOverhead: 32.809ms, totalSpan: 90.41ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 47)
+[FrameTiming] FrameTiming(buildDuration: 7.113ms, rasterDuration: 12.453ms, vsyncOverhead: 27.182000000000002ms, totalSpan: 46.831ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 48)
+[FrameTiming] FrameTiming(buildDuration: 41.908ms, rasterDuration: 13.987ms, vsyncOverhead: 71.356ms, totalSpan: 127.319ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 49)
+[FrameTiming] FrameTiming(buildDuration: 25.818ms, rasterDuration: 13.489ms, vsyncOverhead: 27.593ms, totalSpan: 66.998ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 50)
+[FrameTiming] FrameTiming(buildDuration: 6.42ms, rasterDuration: 12.598ms, vsyncOverhead: 47.091ms, totalSpan: 66.2ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 51)
+[FrameTiming] FrameTiming(buildDuration: 34.162ms, rasterDuration: 9.427ms, vsyncOverhead: 65.545ms, totalSpan: 109.21300000000001ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 52)
+[FrameTiming] FrameTiming(buildDuration: 38.318ms, rasterDuration: 13.211ms, vsyncOverhead: 29.461000000000002ms, totalSpan: 81.105ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 53)
+[FrameTiming] FrameTiming(buildDuration: 33.87ms, rasterDuration: 9.576ms, vsyncOverhead: 30.535ms, totalSpan: 74.059ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 54)
+[FrameTiming] FrameTiming(buildDuration: 5.631ms, rasterDuration: 11.361ms, vsyncOverhead: 30.847ms, totalSpan: 47.962ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 55)
+[FrameTiming] FrameTiming(buildDuration: 36.806ms, rasterDuration: 16.326ms, vsyncOverhead: 2.013ms, totalSpan: 55.267ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 56)
+[FrameTiming] FrameTiming(buildDuration: 29.892ms, rasterDuration: 13.615ms, vsyncOverhead: 2.274ms, totalSpan: 45.876ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 57)
+[FrameTiming] FrameTiming(buildDuration: 22.653000000000002ms, rasterDuration: 9.173ms, vsyncOverhead: 121.887ms, totalSpan: 153.781ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 58)
+[FrameTiming] FrameTiming(buildDuration: 6.146ms, rasterDuration: 11.507ms, vsyncOverhead: 2.107ms, totalSpan: 19.866ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 59)
+[FrameTiming] FrameTiming(buildDuration: 37.082ms, rasterDuration: 12.801ms, vsyncOverhead: 1.2630000000000001ms, totalSpan: 51.230000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 60)
+[FrameTiming] FrameTiming(buildDuration: 5.6000000000000005ms, rasterDuration: 10.479000000000001ms, vsyncOverhead: 1.206ms, totalSpan: 17.374ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 61)
+[FrameTiming] FrameTiming(buildDuration: 32.478ms, rasterDuration: 12.021ms, vsyncOverhead: 49.022ms, totalSpan: 93.637ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 62)
+[FrameTiming] FrameTiming(buildDuration: 25.857ms, rasterDuration: 11.453ms, vsyncOverhead: 36.798ms, totalSpan: 74.19500000000001ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 63)
+[FrameTiming] FrameTiming(buildDuration: 9.081ms, rasterDuration: 11.094ms, vsyncOverhead: 39.402ms, totalSpan: 59.693ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 64)
+[FrameTiming] FrameTiming(buildDuration: 36.445ms, rasterDuration: 11.981ms, vsyncOverhead: 57.205ms, totalSpan: 105.712ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 65)
+[FrameTiming] FrameTiming(buildDuration: 32.776ms, rasterDuration: 10.722ms, vsyncOverhead: 25.2ms, totalSpan: 68.794ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 66)
+[FrameTiming] FrameTiming(buildDuration: 10.668000000000001ms, rasterDuration: 14.929ms, vsyncOverhead: 39.07ms, totalSpan: 64.84ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 67)
+[FrameTiming] FrameTiming(buildDuration: 36.342ms, rasterDuration: 12.763ms, vsyncOverhead: 62.869ms, totalSpan: 112.047ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 68)
+[FrameTiming] FrameTiming(buildDuration: 28.753ms, rasterDuration: 14.387ms, vsyncOverhead: 33.401ms, totalSpan: 76.64ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 69)
+[FrameTiming] FrameTiming(buildDuration: 23.183ms, rasterDuration: 13.014000000000001ms, vsyncOverhead: 35.252ms, totalSpan: 71.55ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 70)
+[FrameTiming] FrameTiming(buildDuration: 5.237ms, rasterDuration: 13.879ms, vsyncOverhead: 1.799ms, totalSpan: 20.985ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 71)
+[FrameTiming] FrameTiming(buildDuration: 35.461ms, rasterDuration: 10.51ms, vsyncOverhead: 1.867ms, totalSpan: 47.93ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 72)
+[FrameTiming] FrameTiming(buildDuration: 4.085ms, rasterDuration: 9.545ms, vsyncOverhead: 8.125ms, totalSpan: 21.836000000000002ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 73)
+[FrameTiming] FrameTiming(buildDuration: 29.777ms, rasterDuration: 14.235ms, vsyncOverhead: 1.939ms, totalSpan: 46.045ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 74)
+[FrameTiming] FrameTiming(buildDuration: 5.671ms, rasterDuration: 10.88ms, vsyncOverhead: 20.268ms, totalSpan: 36.9ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 75)
+[FrameTiming] FrameTiming(buildDuration: 37.515ms, rasterDuration: 14.742ms, vsyncOverhead: 2.032ms, totalSpan: 54.388ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 76)
+[FrameTiming] FrameTiming(buildDuration: 6.363ms, rasterDuration: 11.918000000000001ms, vsyncOverhead: 3.08ms, totalSpan: 21.443ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 77)
+[FrameTiming] FrameTiming(buildDuration: 27.711000000000002ms, rasterDuration: 12.655000000000001ms, vsyncOverhead: 1.559ms, totalSpan: 41.985ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 78)
+[FrameTiming] FrameTiming(buildDuration: 4.989ms, rasterDuration: 10.019ms, vsyncOverhead: 3.644ms, totalSpan: 18.722ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 79)
+[FrameTiming] FrameTiming(buildDuration: 38.968ms, rasterDuration: 13.924ms, vsyncOverhead: 2.039ms, totalSpan: 55.015ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 80)
+[FrameTiming] FrameTiming(buildDuration: 6.376ms, rasterDuration: 15.018ms, vsyncOverhead: 2.099ms, totalSpan: 23.580000000000002ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 81)
+[FrameTiming] FrameTiming(buildDuration: 39.392ms, rasterDuration: 9.179ms, vsyncOverhead: 1.85ms, totalSpan: 50.507ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 82)
+[FrameTiming] FrameTiming(buildDuration: 4.695ms, rasterDuration: 8.39ms, vsyncOverhead: 1.921ms, totalSpan: 15.073ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 83)
+[FrameTiming] FrameTiming(buildDuration: 33.164ms, rasterDuration: 11.698ms, vsyncOverhead: 2.055ms, totalSpan: 47.005ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 84)
+[FrameTiming] FrameTiming(buildDuration: 6.362ms, rasterDuration: 14.081ms, vsyncOverhead: 26.805ms, totalSpan: 47.351ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 85)
+[FrameTiming] FrameTiming(buildDuration: 37.167ms, rasterDuration: 12.108ms, vsyncOverhead: 1.967ms, totalSpan: 51.334ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 86)
+[FrameTiming] FrameTiming(buildDuration: 6.1450000000000005ms, rasterDuration: 13.438ms, vsyncOverhead: 1.209ms, totalSpan: 20.895ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 87)
+[FrameTiming] FrameTiming(buildDuration: 50.255ms, rasterDuration: 7.862ms, vsyncOverhead: 1.467ms, totalSpan: 59.688ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 88)
+[FrameTiming] FrameTiming(buildDuration: 3.503ms, rasterDuration: 8.233ms, vsyncOverhead: 2.991ms, totalSpan: 14.797ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 89)
+[FrameTiming] FrameTiming(buildDuration: 41.198ms, rasterDuration: 12.096ms, vsyncOverhead: 2.117ms, totalSpan: 55.515ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 90)
+[FrameTiming] FrameTiming(buildDuration: 5.585ms, rasterDuration: 12.151ms, vsyncOverhead: 2.954ms, totalSpan: 20.788ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 91)
+[FrameTiming] FrameTiming(buildDuration: 30.714000000000002ms, rasterDuration: 15.461ms, vsyncOverhead: 39.367ms, totalSpan: 85.651ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 92)
+[FrameTiming] FrameTiming(buildDuration: 7.032ms, rasterDuration: 13.152000000000001ms, vsyncOverhead: 1.6580000000000001ms, totalSpan: 21.95ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 93)
+[FrameTiming] FrameTiming(buildDuration: 20.891000000000002ms, rasterDuration: 11.989ms, vsyncOverhead: 1.943ms, totalSpan: 34.904ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 94)
+[FrameTiming] FrameTiming(buildDuration: 6.777ms, rasterDuration: 11.032ms, vsyncOverhead: 1.452ms, totalSpan: 19.36ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 95)
+[FrameTiming] FrameTiming(buildDuration: 21.443ms, rasterDuration: 12.341000000000001ms, vsyncOverhead: 1.414ms, totalSpan: 35.277ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 96)
+[FrameTiming] FrameTiming(buildDuration: 7.607ms, rasterDuration: 11.941ms, vsyncOverhead: 13.328ms, totalSpan: 32.976ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 97)
+[FrameTiming] FrameTiming(buildDuration: 42.143ms, rasterDuration: 13.277000000000001ms, vsyncOverhead: 3.132ms, totalSpan: 58.660000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 98)
+[FrameTiming] FrameTiming(buildDuration: 4.864ms, rasterDuration: 11.341000000000001ms, vsyncOverhead: 7.448ms, totalSpan: 23.747ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 99)
+[FrameTiming] FrameTiming(buildDuration: 37.016ms, rasterDuration: 14.126ms, vsyncOverhead: 1.858ms, totalSpan: 53.095ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 100)
+[FrameTiming] FrameTiming(buildDuration: 30.352ms, rasterDuration: 14.85ms, vsyncOverhead: 1.6300000000000001ms, totalSpan: 46.932ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 101)
+[FrameTiming] FrameTiming(buildDuration: 23.882ms, rasterDuration: 13.674ms, vsyncOverhead: 115.007ms, totalSpan: 152.62800000000001ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 102)
+[FrameTiming] FrameTiming(buildDuration: 8.419ms, rasterDuration: 13.317ms, vsyncOverhead: 1.512ms, totalSpan: 23.355ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 103)
+[FrameTiming] FrameTiming(buildDuration: 32.932ms, rasterDuration: 11.237ms, vsyncOverhead: 2.12ms, totalSpan: 46.404ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 104)
+[FrameTiming] FrameTiming(buildDuration: 3.94ms, rasterDuration: 8.958ms, vsyncOverhead: 7.736ms, totalSpan: 20.701ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 105)
+[FrameTiming] FrameTiming(buildDuration: 39.052ms, rasterDuration: 16.663ms, vsyncOverhead: 2.557ms, totalSpan: 58.418ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 106)
+[FrameTiming] FrameTiming(buildDuration: 4.997ms, rasterDuration: 11.666ms, vsyncOverhead: 5.869ms, totalSpan: 22.623ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 107)
+[FrameTiming] FrameTiming(buildDuration: 25.684ms, rasterDuration: 12.435ms, vsyncOverhead: 36.035000000000004ms, totalSpan: 74.226ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 108)
+[FrameTiming] FrameTiming(buildDuration: 26.467000000000002ms, rasterDuration: 11.099ms, vsyncOverhead: 32.965ms, totalSpan: 70.636ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 109)
+[FrameTiming] FrameTiming(buildDuration: 5.3420000000000005ms, rasterDuration: 11.700000000000001ms, vsyncOverhead: 2.164ms, totalSpan: 19.297ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 110)
+[FrameTiming] FrameTiming(buildDuration: 32.037ms, rasterDuration: 11.655ms, vsyncOverhead: 1.249ms, totalSpan: 45.023ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 111)
+[FrameTiming] FrameTiming(buildDuration: 3.9210000000000003ms, rasterDuration: 10.408ms, vsyncOverhead: 9.495000000000001ms, totalSpan: 23.900000000000002ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 112)
+[FrameTiming] FrameTiming(buildDuration: 22.865000000000002ms, rasterDuration: 10.646ms, vsyncOverhead: 1.79ms, totalSpan: 35.39ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 113)
+[FrameTiming] FrameTiming(buildDuration: 5.2250000000000005ms, rasterDuration: 10.854000000000001ms, vsyncOverhead: 23.472ms, totalSpan: 39.64ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 114)
+[FrameTiming] FrameTiming(buildDuration: 38.56ms, rasterDuration: 10.494ms, vsyncOverhead: 2.009ms, totalSpan: 51.144ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 115)
+[FrameTiming] FrameTiming(buildDuration: 6.434ms, rasterDuration: 9.396ms, vsyncOverhead: 16.055ms, totalSpan: 31.978ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 116)
+[FrameTiming] FrameTiming(buildDuration: 37.878ms, rasterDuration: 10.361ms, vsyncOverhead: 2.32ms, totalSpan: 50.651ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 117)
+[FrameTiming] FrameTiming(buildDuration: 6.199ms, rasterDuration: 10.816ms, vsyncOverhead: 15.222ms, totalSpan: 32.332ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 118)
+[FrameTiming] FrameTiming(buildDuration: 35.345ms, rasterDuration: 12.221ms, vsyncOverhead: 1.815ms, totalSpan: 49.480000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 119)
+[FrameTiming] FrameTiming(buildDuration: 5.0840000000000005ms, rasterDuration: 10.698ms, vsyncOverhead: 25.487000000000002ms, totalSpan: 41.37ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 120)
+[FrameTiming] FrameTiming(buildDuration: 27.694ms, rasterDuration: 11.636000000000001ms, vsyncOverhead: 2.3930000000000002ms, totalSpan: 41.83ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 121)
+[FrameTiming] FrameTiming(buildDuration: 5.239ms, rasterDuration: 12.01ms, vsyncOverhead: 16.119ms, totalSpan: 33.473ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 122)
+[FrameTiming] FrameTiming(buildDuration: 36.550000000000004ms, rasterDuration: 13.792ms, vsyncOverhead: 2.263ms, totalSpan: 52.702ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 123)
+[FrameTiming] FrameTiming(buildDuration: 7.535ms, rasterDuration: 12.404ms, vsyncOverhead: 1.7890000000000001ms, totalSpan: 21.814ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 124)
+[FrameTiming] FrameTiming(buildDuration: 31.650000000000002ms, rasterDuration: 12.356ms, vsyncOverhead: 3.331ms, totalSpan: 47.428000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 125)
+[FrameTiming] FrameTiming(buildDuration: 3.56ms, rasterDuration: 12.244ms, vsyncOverhead: 12.036ms, totalSpan: 27.911ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 126)
+[FrameTiming] FrameTiming(buildDuration: 32.578ms, rasterDuration: 11.694ms, vsyncOverhead: 2.871ms, totalSpan: 47.353ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 127)
+[FrameTiming] FrameTiming(buildDuration: 6.4430000000000005ms, rasterDuration: 8.787ms, vsyncOverhead: 30.296ms, totalSpan: 45.623ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 128)
+[FrameTiming] FrameTiming(buildDuration: 31.674ms, rasterDuration: 13.893ms, vsyncOverhead: 46.098ms, totalSpan: 91.804ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 129)
+[FrameTiming] FrameTiming(buildDuration: 23.27ms, rasterDuration: 11.197000000000001ms, vsyncOverhead: 27.759ms, totalSpan: 62.32ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 130)
+[FrameTiming] FrameTiming(buildDuration: 5.056ms, rasterDuration: 10.583ms, vsyncOverhead: 42.163000000000004ms, totalSpan: 57.881ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 131)
+[FrameTiming] FrameTiming(buildDuration: 35.436ms, rasterDuration: 13.806000000000001ms, vsyncOverhead: 1.204ms, totalSpan: 50.552ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 132)
+[FrameTiming] FrameTiming(buildDuration: 4.897ms, rasterDuration: 13.644ms, vsyncOverhead: 12.34ms, totalSpan: 30.974ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 133)
+[FrameTiming] FrameTiming(buildDuration: 31.754ms, rasterDuration: 12.292ms, vsyncOverhead: 2.0340000000000003ms, totalSpan: 46.172000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 134)
+[FrameTiming] FrameTiming(buildDuration: 5.335ms, rasterDuration: 9.938ms, vsyncOverhead: 25.028000000000002ms, totalSpan: 40.391ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 135)
+[FrameTiming] FrameTiming(buildDuration: 30.673000000000002ms, rasterDuration: 12.495000000000001ms, vsyncOverhead: 1.937ms, totalSpan: 45.198ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 136)
+[FrameTiming] FrameTiming(buildDuration: 6.6450000000000005ms, rasterDuration: 9.297ms, vsyncOverhead: 18.494ms, totalSpan: 34.551ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 137)
+[FrameTiming] FrameTiming(buildDuration: 34.661ms, rasterDuration: 11.634ms, vsyncOverhead: 1.7590000000000001ms, totalSpan: 48.171ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 138)
+[FrameTiming] FrameTiming(buildDuration: 6.313ms, rasterDuration: 8.566ms, vsyncOverhead: 12.453ms, totalSpan: 27.435000000000002ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 139)
+[FrameTiming] FrameTiming(buildDuration: 32.97ms, rasterDuration: 10.618ms, vsyncOverhead: 3.4050000000000002ms, totalSpan: 47.104ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 140)
+[FrameTiming] FrameTiming(buildDuration: 5.955ms, rasterDuration: 13.346ms, vsyncOverhead: 23.256ms, totalSpan: 42.676ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 141)
+[FrameTiming] FrameTiming(buildDuration: 42.921ms, rasterDuration: 15.897ms, vsyncOverhead: 2.184ms, totalSpan: 61.13ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 142)
+[FrameTiming] FrameTiming(buildDuration: 7.587ms, rasterDuration: 12.838000000000001ms, vsyncOverhead: 13.079ms, totalSpan: 33.602000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 143)
+[FrameTiming] FrameTiming(buildDuration: 32.485ms, rasterDuration: 13.33ms, vsyncOverhead: 70.446ms, totalSpan: 116.331ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 144)
+[FrameTiming] FrameTiming(buildDuration: 32.348ms, rasterDuration: 10.387ms, vsyncOverhead: 52.049ms, totalSpan: 94.874ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 145)
+[FrameTiming] FrameTiming(buildDuration: 32.551ms, rasterDuration: 9.895ms, vsyncOverhead: 44.688ms, totalSpan: 87.218ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 146)
+[FrameTiming] FrameTiming(buildDuration: 26.754ms, rasterDuration: 11.67ms, vsyncOverhead: 30.022000000000002ms, totalSpan: 68.539ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 147)
+[FrameTiming] FrameTiming(buildDuration: 5.642ms, rasterDuration: 11.553ms, vsyncOverhead: 43.773ms, totalSpan: 61.059000000000005ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 148)
+[FrameTiming] FrameTiming(buildDuration: 35.015ms, rasterDuration: 11.589ms, vsyncOverhead: 1.969ms, totalSpan: 48.698ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 149)
+[FrameTiming] FrameTiming(buildDuration: 5.156ms, rasterDuration: 11.696ms, vsyncOverhead: 13.994ms, totalSpan: 30.949ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 150)
+[FrameTiming] FrameTiming(buildDuration: 30.553ms, rasterDuration: 11.928ms, vsyncOverhead: 2.5ms, totalSpan: 45.079ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 151)
+[FrameTiming] FrameTiming(buildDuration: 4.9510000000000005ms, rasterDuration: 9.943ms, vsyncOverhead: 13.125ms, totalSpan: 28.11ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 152)
+[FrameTiming] FrameTiming(buildDuration: 23.023ms, rasterDuration: 11.31ms, vsyncOverhead: 1.459ms, totalSpan: 35.881ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 153)
+[FrameTiming] FrameTiming(buildDuration: 7.501ms, rasterDuration: 11.597ms, vsyncOverhead: 35.197ms, totalSpan: 54.398ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 154)
+[FrameTiming] FrameTiming(buildDuration: 37.14ms, rasterDuration: 12.897ms, vsyncOverhead: 1.873ms, totalSpan: 52.017ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 155)
+[FrameTiming] FrameTiming(buildDuration: 5.362ms, rasterDuration: 13.518ms, vsyncOverhead: 1.801ms, totalSpan: 20.785ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 156)
+[FrameTiming] FrameTiming(buildDuration: 32.65ms, rasterDuration: 13.486ms, vsyncOverhead: 1.6480000000000001ms, totalSpan: 47.878ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 157)
+[FrameTiming] FrameTiming(buildDuration: 3.552ms, rasterDuration: 11.407ms, vsyncOverhead: 11.853ms, totalSpan: 26.89ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 158)
+[FrameTiming] FrameTiming(buildDuration: 22.463ms, rasterDuration: 13.743ms, vsyncOverhead: 2.87ms, totalSpan: 39.182ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 159)
+[FrameTiming] FrameTiming(buildDuration: 6.357ms, rasterDuration: 16.893ms, vsyncOverhead: 3.535ms, totalSpan: 26.902ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 160)
+[FrameTiming] FrameTiming(buildDuration: 31.057000000000002ms, rasterDuration: 12.899000000000001ms, vsyncOverhead: 2.198ms, totalSpan: 46.242000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 161)
+[FrameTiming] FrameTiming(buildDuration: 4.016ms, rasterDuration: 11.682ms, vsyncOverhead: 11.647ms, totalSpan: 27.433ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 162)
+[FrameTiming] FrameTiming(buildDuration: 26.062ms, rasterDuration: 13.387ms, vsyncOverhead: 3.797ms, totalSpan: 43.321ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 163)
+[FrameTiming] FrameTiming(buildDuration: 4.6930000000000005ms, rasterDuration: 10.399000000000001ms, vsyncOverhead: 19.461000000000002ms, totalSpan: 34.649ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 164)
+[FrameTiming] FrameTiming(buildDuration: 36.349000000000004ms, rasterDuration: 8.928ms, vsyncOverhead: 2.88ms, totalSpan: 48.251ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 165)
+[FrameTiming] FrameTiming(buildDuration: 5.3660000000000005ms, rasterDuration: 10.691ms, vsyncOverhead: 23.990000000000002ms, totalSpan: 40.143ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 166)
+[FrameTiming] FrameTiming(buildDuration: 36.463ms, rasterDuration: 11.348ms, vsyncOverhead: 1.68ms, totalSpan: 49.582ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 167)
+[FrameTiming] FrameTiming(buildDuration: 4.9590000000000005ms, rasterDuration: 10.762ms, vsyncOverhead: 14.886000000000001ms, totalSpan: 30.681ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 168)
+[FrameTiming] FrameTiming(buildDuration: 44.711ms, rasterDuration: 9.502ms, vsyncOverhead: 2.2520000000000002ms, totalSpan: 56.575ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 169)
+[FrameTiming] FrameTiming(buildDuration: 4.984ms, rasterDuration: 9.111ms, vsyncOverhead: 2.719ms, totalSpan: 16.888ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 170)
+[FrameTiming] FrameTiming(buildDuration: 26.204ms, rasterDuration: 13.079ms, vsyncOverhead: 1.905ms, totalSpan: 41.283ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 171)
+[FrameTiming] FrameTiming(buildDuration: 4.666ms, rasterDuration: 11.907ms, vsyncOverhead: 17.644000000000002ms, totalSpan: 34.305ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 172)
+[FrameTiming] FrameTiming(buildDuration: 34.351ms, rasterDuration: 12.123000000000001ms, vsyncOverhead: 3.423ms, totalSpan: 50.012ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 173)
+[FrameTiming] FrameTiming(buildDuration: 4.878ms, rasterDuration: 9.985ms, vsyncOverhead: 25.542ms, totalSpan: 40.481ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 174)
+[FrameTiming] FrameTiming(buildDuration: 34.673ms, rasterDuration: 11.858ms, vsyncOverhead: 1.28ms, totalSpan: 47.904ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 175)
+[FrameTiming] FrameTiming(buildDuration: 5.67ms, rasterDuration: 9.755ms, vsyncOverhead: 16.151ms, totalSpan: 31.69ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 176)
+[FrameTiming] FrameTiming(buildDuration: 28.310000000000002ms, rasterDuration: 12.274000000000001ms, vsyncOverhead: 1.75ms, totalSpan: 42.417ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 177)
+[FrameTiming] FrameTiming(buildDuration: 5.323ms, rasterDuration: 12.72ms, vsyncOverhead: 24.150000000000002ms, totalSpan: 42.289ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 178)
+[FrameTiming] FrameTiming(buildDuration: 22.531ms, rasterDuration: 13.35ms, vsyncOverhead: 1.561ms, totalSpan: 37.565ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 179)
+[FrameTiming] FrameTiming(buildDuration: 5.132ms, rasterDuration: 19.117ms, vsyncOverhead: 2.59ms, totalSpan: 26.926000000000002ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 180)
+[FrameTiming] FrameTiming(buildDuration: 34.567ms, rasterDuration: 10.759ms, vsyncOverhead: 1.937ms, totalSpan: 47.34ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 181)
+[FrameTiming] FrameTiming(buildDuration: 3.5780000000000003ms, rasterDuration: 7.506ms, vsyncOverhead: 9.404ms, totalSpan: 20.552ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 182)
+[FrameTiming] FrameTiming(buildDuration: 36.655ms, rasterDuration: 12.931000000000001ms, vsyncOverhead: 2.688ms, totalSpan: 52.367000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 183)
+[FrameTiming] FrameTiming(buildDuration: 4.203ms, rasterDuration: 14.431000000000001ms, vsyncOverhead: 1.534ms, totalSpan: 20.264ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 184)
+[FrameTiming] FrameTiming(buildDuration: 34.827ms, rasterDuration: 11.047ms, vsyncOverhead: 2.3040000000000003ms, totalSpan: 48.244ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 185)
+[FrameTiming] FrameTiming(buildDuration: 7.087ms, rasterDuration: 10.696ms, vsyncOverhead: 14.466000000000001ms, totalSpan: 32.359ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 186)
+[FrameTiming] FrameTiming(buildDuration: 32.17ms, rasterDuration: 9.07ms, vsyncOverhead: 1.714ms, totalSpan: 43.04ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 187)
+[FrameTiming] FrameTiming(buildDuration: 28.835ms, rasterDuration: 8.225ms, vsyncOverhead: 52.791000000000004ms, totalSpan: 89.933ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 188)
+[FrameTiming] FrameTiming(buildDuration: 23.971ms, rasterDuration: 10.535ms, vsyncOverhead: 52.558ms, totalSpan: 87.154ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 189)
+[FrameTiming] FrameTiming(buildDuration: 4.545ms, rasterDuration: 10.419ms, vsyncOverhead: 1.864ms, totalSpan: 16.91ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 190)
+[FrameTiming] FrameTiming(buildDuration: 32.045ms, rasterDuration: 7.956ms, vsyncOverhead: 1.806ms, totalSpan: 41.877ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 191)
+[FrameTiming] FrameTiming(buildDuration: 3.874ms, rasterDuration: 10.468ms, vsyncOverhead: 3.903ms, totalSpan: 18.338ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 192)
+[FrameTiming] FrameTiming(buildDuration: 33.85ms, rasterDuration: 14.046000000000001ms, vsyncOverhead: 2.5540000000000003ms, totalSpan: 50.565ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 193)
+[FrameTiming] FrameTiming(buildDuration: 5.257ms, rasterDuration: 10.839ms, vsyncOverhead: 13.761000000000001ms, totalSpan: 29.923000000000002ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 194)
+[FrameTiming] FrameTiming(buildDuration: 36.432ms, rasterDuration: 11.698ms, vsyncOverhead: 3.686ms, totalSpan: 51.925000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 195)
+[FrameTiming] FrameTiming(buildDuration: 6.4510000000000005ms, rasterDuration: 11.874ms, vsyncOverhead: 17.150000000000002ms, totalSpan: 35.552ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 196)
+[FrameTiming] FrameTiming(buildDuration: 26.843ms, rasterDuration: 10.938ms, vsyncOverhead: 2.236ms, totalSpan: 40.104ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 197)
+[FrameTiming] FrameTiming(buildDuration: 5.939ms, rasterDuration: 12.583ms, vsyncOverhead: 13.853ms, totalSpan: 32.483000000000004ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 198)
+[FrameTiming] FrameTiming(buildDuration: 28.832ms, rasterDuration: 10.459ms, vsyncOverhead: 3.69ms, totalSpan: 43.069ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 199)
+[FrameTiming] FrameTiming(buildDuration: 5.406ms, rasterDuration: 9.755ms, vsyncOverhead: 7.1290000000000004ms, totalSpan: 22.387ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 200)
+[FrameTiming] FrameTiming(buildDuration: 34.955ms, rasterDuration: 12.39ms, vsyncOverhead: 1.427ms, totalSpan: 48.859ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 201)
+[FrameTiming] FrameTiming(buildDuration: 5.596ms, rasterDuration: 10.682ms, vsyncOverhead: 19.944ms, totalSpan: 36.303ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 202)
+[FrameTiming] FrameTiming(buildDuration: 35.174ms, rasterDuration: 11.131ms, vsyncOverhead: 2.533ms, totalSpan: 48.926ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 203)
+[FrameTiming] FrameTiming(buildDuration: 6.016ms, rasterDuration: 12.181000000000001ms, vsyncOverhead: 16.686ms, totalSpan: 35.003ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 204)
+[FrameTiming] FrameTiming(buildDuration: 33.224000000000004ms, rasterDuration: 12.104000000000001ms, vsyncOverhead: 1.357ms, totalSpan: 46.783ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 205)
+[FrameTiming] FrameTiming(buildDuration: 24.028000000000002ms, rasterDuration: 9.799ms, vsyncOverhead: 20.471ms, totalSpan: 54.437ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 206)
+[FrameTiming] FrameTiming(buildDuration: 21.832ms, rasterDuration: 9.368ms, vsyncOverhead: 40.282000000000004ms, totalSpan: 71.56700000000001ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 207)
+[FrameTiming] FrameTiming(buildDuration: 5.8340000000000005ms, rasterDuration: 9.834ms, vsyncOverhead: 39.478ms, totalSpan: 55.229ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 208)
+[FrameTiming] FrameTiming(buildDuration: 26.316ms, rasterDuration: 11.839ms, vsyncOverhead: 3.629ms, totalSpan: 41.893ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 209)
+[FrameTiming] FrameTiming(buildDuration: 18.905ms, rasterDuration: 8.249ms, vsyncOverhead: 17.471ms, totalSpan: 44.698ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 210)
+[FrameTiming] FrameTiming(buildDuration: 31.424ms, rasterDuration: 12.283ms, vsyncOverhead: 50.196ms, totalSpan: 94.009ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 211)
+[FrameTiming] FrameTiming(buildDuration: 5.317ms, rasterDuration: 9.68ms, vsyncOverhead: 29.872ms, totalSpan: 44.941ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 212)
+[FrameTiming] FrameTiming(buildDuration: 31.793ms, rasterDuration: 10.27ms, vsyncOverhead: 1.997ms, totalSpan: 44.159ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 213)
+[FrameTiming] FrameTiming(buildDuration: 5.26ms, rasterDuration: 11.305ms, vsyncOverhead: 22.877ms, totalSpan: 39.53ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 214)
+[FrameTiming] FrameTiming(buildDuration: 35.876ms, rasterDuration: 8.991ms, vsyncOverhead: 1.97ms, totalSpan: 46.927ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 215)
+[FrameTiming] FrameTiming(buildDuration: 5.633ms, rasterDuration: 9.523ms, vsyncOverhead: 16.515ms, totalSpan: 31.779ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 216)
+[FrameTiming] FrameTiming(buildDuration: 32.209ms, rasterDuration: 12.703ms, vsyncOverhead: 1.915ms, totalSpan: 46.95ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 217)
+[FrameTiming] FrameTiming(buildDuration: 5.663ms, rasterDuration: 10.393ms, vsyncOverhead: 12.745000000000001ms, totalSpan: 28.889ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 218)
+[FrameTiming] FrameTiming(buildDuration: 30.275000000000002ms, rasterDuration: 9.984ms, vsyncOverhead: 3.641ms, totalSpan: 43.988ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 219)
+[FrameTiming] FrameTiming(buildDuration: 5.091ms, rasterDuration: 7.4030000000000005ms, vsyncOverhead: 18.841ms, totalSpan: 31.418ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 220)
+[FrameTiming] FrameTiming(buildDuration: 21.109ms, rasterDuration: 9.291ms, vsyncOverhead: 2.058ms, totalSpan: 32.545ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 221)
+[FrameTiming] FrameTiming(buildDuration: 7.957ms, rasterDuration: 11.891ms, vsyncOverhead: 43.669000000000004ms, totalSpan: 63.6ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 222)
+[FrameTiming] FrameTiming(buildDuration: 33.173ms, rasterDuration: 10.586ms, vsyncOverhead: 1.284ms, totalSpan: 45.156ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 223)
+[FrameTiming] FrameTiming(buildDuration: 4.726ms, rasterDuration: 10.693ms, vsyncOverhead: 16.82ms, totalSpan: 32.339ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 224)
+[FrameTiming] FrameTiming(buildDuration: 28.813ms, rasterDuration: 10.456ms, vsyncOverhead: 3.724ms, totalSpan: 43.081ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 225)
+[FrameTiming] FrameTiming(buildDuration: 5.469ms, rasterDuration: 10.801ms, vsyncOverhead: 26.394000000000002ms, totalSpan: 42.76ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 226)
+[FrameTiming] FrameTiming(buildDuration: 29.571ms, rasterDuration: 12.637ms, vsyncOverhead: 2.136ms, totalSpan: 44.443ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 227)
+[FrameTiming] FrameTiming(buildDuration: 5.2540000000000004ms, rasterDuration: 9.854000000000001ms, vsyncOverhead: 10.922ms, totalSpan: 26.118000000000002ms, layerCacheCount: 0, layerCacheBytes: 0, pictureCacheCount: 0, pictureCacheBytes: 0, frameNumber: 228)
+[AUTOSIM] done
+Lost connection to device.
+
+Script done on 2026-10-15 16:27:19+08:00 [COMMAND_EXIT_CODE="0"]
