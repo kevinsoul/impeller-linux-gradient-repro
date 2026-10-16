@@ -22,7 +22,7 @@ Material for **[flutter/flutter#194433](https://github.com/flutter/flutter/issue
 | `scripts/` | Capture + analysis tooling used for the measurements (`scripts/vm_capture/` is a runnable Dart package) |
 | `patches/` | Temporary instrumentation applied to the *reporting app* (frame-timing logger, auto entry into its simulated-data mode, feature bisection flags) |
 | `docs/HANDOFF.md` | **Hand-over notes (Chinese): engine build steps, local-engine flags, source-entry grep recipes, hypotheses, acceptance criteria for a fix** |
-| `docs/issue-updates.md` | The three comments posted to the upstream issue |
+| `docs/issue-updates.md` | The four comments posted to the upstream issue |
 
 ## Running the reproducer
 
@@ -99,7 +99,7 @@ that disables individual decorations. Numbers are quoted in the issue comment; t
 Everything needed to continue this work — engine build steps (engine sources now live inside the
 `flutter/flutter` monorepo), the `--local-engine*` flags verified for Flutter 3.47.7, source-navigation
 grep recipes for `impeller`, the remaining hypotheses and the acceptance criteria for a fix — is recorded in
-[`docs/HANDOFF.md`](docs/HANDOFF.md) (Chinese). The three comments posted upstream are in
+[`docs/HANDOFF.md`](docs/HANDOFF.md) (Chinese). The four comments posted upstream are in
 [`docs/issue-updates.md`](docs/issue-updates.md).
 
 Upstream questions still open (see the third comment): whether one render pass per blended draw is expected

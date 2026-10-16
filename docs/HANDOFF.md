@@ -1,8 +1,8 @@
 # 交接文档：在新服务器上动手修 Impeller Linux GL 的渐变/pass 开销
 
-- 上游 issue：**flutter/flutter#194433**（现象 → 归因 → 材料，共 3 条评论）
+- 上游 issue：**flutter/flutter#194433**（现象 → 归因 → 材料 → 问询回应，共 4 条评论）
 - 复现仓库（本仓库）：https://github.com/kevinsoul/impeller-linux-gradient-repro
-- 应用仓库（private）：`kevinsoul/pressure-sensor-12x4`，分支 `exp/mask-8x2`，HEAD `fed1a01`（v2.21.2）
+- 应用仓库（private）：`kevinsoul/pressure-sensor-12x4`，分支 `exp/mask-8x2`，HEAD `b006adf`（v2.22.2）
 
 ---
 
@@ -202,9 +202,11 @@ git checkout -- .
 
 ## 9. 上游沟通状态
 
-`#194433` 已发 3 条评论：① 现象与 A/B 复现 ② 归因 + 最小复现 + 25 pass/帧 ③ 材料仓库链接。
+`#194433` 已发 4 条评论：① 现象与 A/B 复现 ② 归因 + 最小复现 + 25 pass/帧 ③ 材料仓库链接 ④ 回应维护者的复现判读问询（量化对比 + 仅 Impeller 卡）。
 
-**已向上游提问（等回复）**：
+**沟通节点**：维护者 2026-10-15 回复（两条渲染器日志均跑通，但要求补录屏/截图 + 终端日志，并确认是否仅 Impeller 卡）→ 2026-10-16 以评论 ④ 回应；等进一步反馈。
+
+**已向上游提问（等答复）**：
 
 1. GL 后端「逐（混合）绘制开渲染通道」是否符合预期？相邻可共享 pass 的绘制目前有批处理吗？路线图上有相关计划吗？
 2. 依据该复现（纯色持平、渐变面板 1.95x、渐变色斑 2.24x），填充率/pass 开销是否就是被认可的原因？是否有已知 issue/优化项应当改follow？
@@ -224,7 +226,7 @@ git checkout -- .
 | `scripts/` | 抓取与分析工具；`scripts/vm_capture/` 是可运行的 Dart 包（timeline 抓取） |
 | `patches/` | 主仓库取证埋点补丁 |
 | `docs/HANDOFF.md` | 本文档 |
-| `docs/issue-updates.md` | 已发到上游的 3 条评论原文 |
+| `docs/issue-updates.md` | 已发到上游的 4 条评论原文 |
 
 ```bash
 # 复现工程对照（无需人工操作，各约 3–4 分钟）

@@ -1,6 +1,6 @@
 # 已发布到 flutter/flutter#194433 的评论原文
 
-> 依次对应：① 现象与 A/B 复现 ② 归因 + 最小复现 + 25 pass/帧 ③ 材料仓库
+> 依次对应：① 现象与 A/B 复现 ② 归因 + 最小复现 + 25 pass/帧 ③ 材料仓库 ④ 回应维护者的复现判读问询（仅 Impeller 卡）
 
 ---
 
@@ -142,3 +142,41 @@ Quick orientation, from the top-level `README.md`:
 
 Still very much interested in the answers to the three questions in my previous comment — in particular whether issuing a render pass per blended draw is expected in the GL backend, and whether a PR that reduces the number of passes would be welcome.
 
+
+---
+
+## 评论 4
+
+> 回应维护者 @suryaKommana2662 的复现判读问询（2026-10-15）：两条渲染器日志均跑通，但终端输出无法确认是否复现；要求补充录屏/截图与终端日志，并确认是否仅 Impeller 卡。
+> 要点：卡顿是**帧时序**问题（静态截图无法呈现），逐帧量化对比即证据；**仅 Impeller 启用时卡顿**，`--no-enable-impeller`（Skia）下同一交互平滑。
+
+Hi @suryaKommana2662, thanks for running it.
+
+> Both runs completed all five gradient scenarios
+
+Right — completion isn't the signal here; the reproduction is a **frame-timing** difference, not a crash or a visibly wrong frame. The jank is temporal (frame pacing), so a still screenshot can't capture it, and the per-frame logs *are* the measurement. To turn the logs you already have into the comparison:
+
+```bash
+python3 scripts/repro_compare.py logs/grad_impeller.log logs/grad_skia.log
+```
+
+Median raster time per scenario (debug, same machine, same session conditions):
+
+| scenario | Impeller | Skia | ratio |
+|---|---|---|---|
+| full-screen solid colour (control) | 0.59 ms | 0.62 ms | 0.96× |
+| full-screen 2-stop linear gradient | 1.06 ms | 0.81 ms | 1.30× |
+| 9 rounded panels, linear gradient + border | 2.03 ms | 1.04 ms | 1.95× |
+| full-screen 3-stop radial gradient | 1.01 ms | 0.80 ms | 1.26× |
+| `grad_aurora_like` (composition of the reporting app) | 2.56 ms | 1.14 ms | 2.24× |
+
+Raw logs: `logs/grad_impeller.log` / `logs/grad_skia.log` (format in `logs/README.md`). The engine timeline (`timelines/`, analyzed by `scripts/analyze_grad.py`) shows the GL backend recording ~25 render passes/frame for the aurora-like scene; in the real app, `ReactorGLES::FlushOps` ≈ 3.83 ms/frame under Impeller vs ≈ 0.50 ms under Skia.
+
+To your third question — the jank occurs **only with Impeller enabled**:
+
+- `--enable-impeller` (3.47 default): hover-driven repaints in the reporting app and the ticker-driven reproducer are visibly janky.
+- `--no-enable-impeller` (Skia): the same app and interaction are smooth, and the reproducer's gradient scenes drop to ~1.0–1.1 ms median raster time.
+
+So this is an Impeller-GL regression relative to the Skia baseline on AMD radeonsi (Vega 8) / Mesa 25.2.8 / Wayland, not an inherently too-heavy scene. If the comparison script prints ratios near 1× on your machine, that would mean a different environment rather than a wrong reproducer — on this machine it is consistently ~2×.
+
+If a screen recording is still needed for triage, I can attach one (the reproducer is ticker-driven and auto-exits, so it records without any input) — but I'd suggest starting from the timing comparison above, since the defect is frame pacing rather than a static visual artifact.
